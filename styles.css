@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    /*Colores*/
+    --color-Dcyan: hsl(185, 75%, 39%);
+    --color-DdBlue:hsl(229, 23%, 23%);
+    --color-DgBlue: hsl(227, 10%, 46%);
+    --color-Dgray:hsl(0, 0%, 59%);
+}
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    background-color: var(--color-Dcyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 100vh;
+}
+#bg-top{
+    position:absolute;
+    top: -500px;
+    left:-50px;
+    z-index: -1;
+}
+#bg-bottom{
+    position:absolute;
+    bottom: -400px;
+    right: -50px;
+    z-index: -1;
+}
+.flex-container{
+    margin-left: 500px;
+    margin-top: -150px;
+    width: 355px;
+    height: 375px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.089);
+}
+#foto-victor{
+    border-radius: 50%;
+    border:3px solid white;
+    margin-top:75px;
+    margin-left:80px;
+}
+#nombre{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 60px;
+    margin-top: 30px;
+    color:var(--color-DdBlue);
+}
+figcaption span{
+    margin-left: 10px;
+    font-weight: 400;
+    color: var(--color-Dgray);
+}
+blockquote{
+    color: var(--color-DdBlue);
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.datos{
+    display: flex;
+    border-top:0.2px solid var(--color-Dgray);
+    width: 315px;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    width: 50px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    color:var(--color-DdBlue);
+    font-size: 12px;
+}
+li:first-child{
+    margin-left: 10px;
+}
+
+li span{
+    font-size: 18px;
+    font-weight: 700;
+}
+@media all and (max-width:599px){
+body{
+    width: 375px;
+}
+
+#bg-top{
+    position:absolute;
+    top: -600px;
+    left:-600px;
+    z-index: -1;
+}
+#bg-bottom{
+    position:absolute;
+    bottom: -550px;
+    right:-650px;
+    z-index: -1;
+}
+.flex-container{
+    margin:0 auto;
+    margin-left: 100px;
+}
+
+
+}
