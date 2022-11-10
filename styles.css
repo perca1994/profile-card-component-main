@@ -19,14 +19,14 @@ body{
 }
 #bg-top{
     position:absolute;
-    top: -500px;
-    left:-50px;
+    top: -800px;
+    left:-600px;
     z-index: -1;
 }
 #bg-bottom{
     position:absolute;
-    bottom: -400px;
-    right: -50px;
+    bottom: -700px;
+    right: -40px;
     z-index: -1;
 }
 .flex-container{
